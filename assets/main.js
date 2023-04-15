@@ -81,3 +81,36 @@ for ( let i = 0; i < squadre.length; i++){
 }
 
 console.log(squadre)
+
+
+// Snack 3
+
+// Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).
+
+// l'array egnerato da parte vostra dovrà essere di ad esempio nomi o cose: ['alberto', 'michele','angelo','simone']
+
+// se come numeri ad esemio ho 2 e 4 devo inserire in un array nuovo l'elemento in posizione 3
+
+// La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.
+
+// Usiamo i nuovi metodi degli array foreach o filter.
+
+function chiRimane (){
+    let a = 0;
+    let b = 3;
+
+    let persone = ['alberto','michele','angelo','simone']
+
+    const scelta = persone.filter((nome,index) => {
+        console.log(nome,index)
+        if ( index > a && index < b){
+            return nome 
+        }
+
+    }) 
+
+    return scelta
+
+}
+
+console.log(chiRimane())
